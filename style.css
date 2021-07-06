@@ -76,6 +76,12 @@ a[href*='youtube']:before {
     background-size: contain;
 }
 
+a[href*='linkedin']:before {
+    background: url('./images/linkedin.png') white;
+    background-size: contain;
+    border-radius: 4px;;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -98,12 +104,20 @@ a:hover {
 }
 
 footer {
-    padding: 1em 0 0 0;
+    padding: 0 0 1em 0;
     margin: 0;
     text-align: center;
+    margin-top: -10px;
 }
 
-
+.footer_link a::before{
+    content: '';
+    width: 1.1em;
+    height: 1.1em;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
 
 
 @media only screen and (max-width: 750px) {
