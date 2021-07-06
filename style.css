@@ -19,13 +19,6 @@ body {
     margin:0;
 }
 
-@media only screen and (max-width: 750px) {
-    .wrapper .links {
-        flex-direction: column;
-        text-align: left;
-    }
-}
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -37,6 +30,11 @@ body {
 
 h1, h2, h3 {
     margin: 0;
+}
+
+h1 {
+    align-self: flex-end;
+    color: rgb(34, 76, 92);
 }
 
 a {
@@ -86,13 +84,13 @@ a:hover {
     display: flex;
     text-align: right;
     list-style: none;
-    padding-bottom: 1em;
-    border-bottom: 1px solid rgb(34, 76, 92);;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid rgb(34, 76, 92);
 }
 
 .links li {
     text-decoration: none;
-    padding: 0.1em 0;
+    padding: 0.2em 0;
 }
 
 .links i {
@@ -103,4 +101,18 @@ footer {
     padding: 1em 0 0 0;
     margin: 0;
     text-align: center;
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+    .wrapper .links {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    h1 {
+        align-self: auto;
+    }
 }
