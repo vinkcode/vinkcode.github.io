@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    color: rgb(211, 211, 211);
+    background: rgb(10, 31, 39);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    height: 95%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin:0;
+}
+
+@media only screen and (max-width: 750px) {
+    .wrapper .links {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 50em;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.intro {
+    padding: 0 0 1em;
+}
+
+.links a::before {
+    content: '';
+    width: 1.1em;
+    height: 1.1em;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a[href*='bitcoinchapter']:before {
+    background: url('./images/bitcoin.png');
+    background-size: contain;
+    transform: rotate(25deg);
+}
+
+a[href*='github']:before {
+    background: url('./images/Octocat.png');
+    background-size: contain;
+}
+
+a[href*='codepen']:before {
+    background: url('./images/codepen.png');
+    background-size: contain;
+}
+
+a[href*='youtube']:before {
+    background: url('./images/youtube.svg');
+    background-size: contain;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+    text-align: right;
+    list-style: none;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(34, 76, 92);;
+}
+
+.links li {
+    text-decoration: none;
+    padding: 0.1em 0;
+}
+
+.links i {
+    color: rgb(90, 126, 141);
+}
+
+footer {
+    padding: 1em 0 0 0;
+    margin: 0;
+    text-align: center;
+}
