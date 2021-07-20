@@ -41,6 +41,7 @@ a {
     color: rgb(211, 211, 211);
     text-decoration: none;
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .intro {
@@ -53,6 +54,8 @@ a {
     height: 1.1em;
     display: inline-block;
     margin-right: 10px;
+    position: relative;
+    top: 4px;
 }
 
 a[href*='bitcoinchapter']:before {
@@ -74,6 +77,7 @@ a[href*='codepen']:before {
 a[href*='youtube']:before {
     background: url('./images/youtube.svg');
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 a[href*='linkedin']:before {
@@ -82,21 +86,28 @@ a[href*='linkedin']:before {
     border-radius: 4px;;
 }
 
+a[href*='trailblazer']:before {
+    background: url('./images/salesforce.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
 a:hover {
     text-decoration: underline;
 }
 
 .links {
-    display: flex;
-    text-align: right;
     list-style: none;
     padding-bottom: 1.5em;
+    padding-left: 0;
     border-bottom: 1px solid rgb(34, 76, 92);
 }
 
 .links li {
     text-decoration: none;
-    padding: 0.2em 0;
+    padding: 0.2em 0em;
+    margin: 0em;
 }
 
 .links i {
