@@ -19,6 +19,18 @@ body {
     margin:0;
 }
 
+@media only screen and (min-width: 750px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1em 0;
+        padding: 1em 0;
+        border-top: 1px solid rgb(34, 76, 92);
+        border-bottom: 1px solid rgb(34, 76, 92);
+    }
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -99,9 +111,8 @@ a:hover {
 
 .links {
     list-style: none;
-    padding-bottom: 1.5em;
     padding-left: 0;
-    border-bottom: 1px solid rgb(34, 76, 92);
+    margin-bottom: 0;
 }
 
 .links li {
@@ -135,6 +146,7 @@ footer {
     .wrapper .links {
         flex-direction: column;
         text-align: left;
+        margin-bottom: 1em;
     }
 
     h1 {
