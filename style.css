@@ -16,7 +16,7 @@ body {
     position: relative;
     top: 0;
     bottom: 0;
-    margin:0;
+    margin: 0;
 }
 
 @media only screen and (min-width: 750px) {
@@ -29,6 +29,10 @@ body {
         border-top: 1px solid rgb(34, 76, 92);
         border-bottom: 1px solid rgb(34, 76, 92);
     }
+    header>div {
+        flex-grow: 1;
+        flex-basis: 0;
+    }
 }
 
 .wrapper {
@@ -40,11 +44,8 @@ body {
     max-width: 50em;
 }
 
-h1, h2, h3 {
-    margin: 0;
-}
-
-h1 {
+.title {
+    margin-top: 0;
     align-self: flex-end;
     color: rgb(34, 76, 92);
 }
@@ -95,11 +96,19 @@ a[href*='youtube']:before {
 a[href*='linkedin']:before {
     background: url('./images/linkedin.png') white;
     background-size: contain;
-    border-radius: 4px;;
+    border-radius: 4px;
+    ;
 }
 
 a[href*='trailblazer']:before {
     background: url('./images/salesforce.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+a[href*='ux-portal']:before {
+    background: url('./images/vinking.png');
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 4px;
@@ -121,7 +130,7 @@ a:hover {
     margin: 0em;
 }
 
-.links i {
+i {
     color: rgb(90, 126, 141);
 }
 
@@ -132,7 +141,7 @@ footer {
     margin-top: -10px;
 }
 
-.footer_link a::before{
+.footer_link a::before {
     content: '';
     width: 1.1em;
     height: 1.1em;
@@ -141,14 +150,12 @@ footer {
     top: 4px;
 }
 
-
 @media only screen and (max-width: 750px) {
     .wrapper .links {
         flex-direction: column;
         text-align: left;
         margin-bottom: 1em;
     }
-
     h1 {
         align-self: auto;
     }
