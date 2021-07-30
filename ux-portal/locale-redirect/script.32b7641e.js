@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"mpVp":[function(require,module,exports) {
 "use strict";var r=require("./utf-8-redirect");(0,r.redirect)();
 },{"./utf-8-redirect":"Dv9c"}]},{},["mpVp"], null)
-//# sourceMappingURL=/script.32b7641e.js.map
+//# sourceMappingURL=script.32b7641e.js.map
