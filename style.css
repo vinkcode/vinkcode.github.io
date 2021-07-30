@@ -146,6 +146,7 @@ footer {
     margin: 0;
     text-align: center;
     margin-top: -10px;
+    font-size: 12px;
 }
 
 .footer_link a::before {
