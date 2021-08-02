@@ -50,6 +50,10 @@ body {
     color: rgb(34, 76, 92);
 }
 
+.title span {
+    color: darkturquoise;
+}
+
 a {
     color: rgb(211, 211, 211);
     text-decoration: none;
@@ -114,6 +118,13 @@ a[href*='ux-portal']:before {
     border-radius: 4px;
 }
 
+a[href*='#']:before {
+    background: url('./images/mario.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -139,6 +150,7 @@ footer {
     margin: 0;
     text-align: center;
     margin-top: -10px;
+    font-size: 12px;
 }
 
 .footer_link a::before {
