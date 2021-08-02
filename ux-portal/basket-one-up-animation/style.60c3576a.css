@@ -1,0 +1,2 @@
+*{box-sizing:border-box}html{height:100%;margin:0}body{color:#d3d3d3;background:#0a1f27;font-family:Arial,Helvetica,sans-serif;padding:0;height:95%;position:relative;top:0;bottom:0;margin:0}.wrapper{display:flex;flex-direction:column;height:100%;margin:0 auto;padding:2em;max-width:50em}.item,.item select{padding:1em}.item{background:#deb887;width:200px;height:100px}.one-up{position:relative}.one-up:before{content:"";color:#adff2f;font-size:20px;position:absolute;z-index:2;left:20px}
+/*# sourceMappingURL=style.60c3576a.css.map */
