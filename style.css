@@ -41,6 +41,7 @@ body {
     height: 100%;
     margin: 0 auto;
     padding: 2em;
+    min-height: 400px;
     max-width: 50em;
 }
 
@@ -51,7 +52,7 @@ body {
 }
 
 .title span {
-    color: darkturquoise;
+    color: rgb(90 126 141);
 }
 
 a {
@@ -111,6 +112,13 @@ a[href*='trailblazer']:before {
     border-radius: 4px;
 }
 
+a[href*='#']:before {
+    background: url('./images/mario.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
 a[href*='ux-portal']:before {
     background: url('./images/vinking.png');
     background-size: contain;
@@ -118,8 +126,8 @@ a[href*='ux-portal']:before {
     border-radius: 4px;
 }
 
-a[href*='#']:before {
-    background: url('./images/mario.png');
+a[href*='salesforce-lightning']:before {
+    background: url('./images/lightning.png');
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 4px;
