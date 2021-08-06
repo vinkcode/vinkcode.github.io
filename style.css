@@ -112,7 +112,7 @@ a[href*='trailblazer']:before {
     border-radius: 4px;
 }
 
-a[href*='#']:before {
+a[href*='prototypes']:before {
     background: url('./images/mario.png');
     background-size: contain;
     background-repeat: no-repeat;
